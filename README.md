@@ -4,10 +4,12 @@
 
 ### Used in the creation of this website
 
-...[Python](https://www.python.org/)
-...[Javascript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
+* [Javascript](https://www.javascript.com/)
 
-...[jQuery](https://jquery.com/)
-...[Bootstrap](https://getbootstrap.com/)
 
-...[Goodreads](https://www.goodreads.com/)
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+
+
+* [Goodreads](https://www.goodreads.com/)
