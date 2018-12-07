@@ -4,7 +4,7 @@ $(document).ready(function() {
 		"isFirst": "True",
 		"books": 20,
 		"isSearch": "False"
-	};
+	}
 	container.append("<div class=\"row\">");
 	let row = $(".row");
 	//Get the first 20 books via a web request
