@@ -1,0 +1,57 @@
+.container-fluid
+{
+    width: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.row
+{
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.col
+{
+    padding-bottom: 3%;
+    padding-right: 2px;
+}
+.btn-dark
+{
+    margin-top: 0;
+    margin-left: 80%;
+}
+.username
+{
+    margin-top: 5px;
+    font-weight: 900;
+    font-family: 'Lato', cursive, 'Times New Roman';
+}
+.form-buy
+{
+    margin-top: 10%;
+}
+img.loading
+{
+    margin-right: 33%;
+    margin-left: 33%;
+    margin-top: 8%;
+}
+/* Card */
+.card
+{
+	background-color: #30a465;
+	border: 6px solid #147b43;
+	color: #323232;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-title
+{
+	font-family: 'Amatic SC', cursive;
+	font-size: x-large;
+	font-weight: bolder;
+}
+.card-text
+{
+	font-family: 'Josefin Slab', cursive;
+	font-size: medium;
+}

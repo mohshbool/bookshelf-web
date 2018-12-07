@@ -1,0 +1,22 @@
+body
+{
+	background-image: url("../media/login_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+}
+form
+{
+  position: center;
+  text-align: center;
+  margin-top : 18%;
+  margin-right: 43%;
+  margin-left: 43%;
+}
+.form-control
+{
+	text-align: center;
+	font-style: italic;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+}

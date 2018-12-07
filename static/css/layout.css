@@ -1,0 +1,30 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: x-large;
+}
+#headtext
+{
+	font-family: 'Josefin Slab', cursive;
+}
+body
+{
+    margin-top: 4%;
+}
+.footer-style
+{
+    font-family: 'Roboto', cursive;
+    padding-left: 20px;
+}
+.footer
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.alert.alert-primary.border.text-center
+{
+    margin-top: 73px;
+}

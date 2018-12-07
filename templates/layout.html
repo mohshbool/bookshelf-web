@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Slab|Playfair+Display|Lato:700i|Lobster|Roboto|Open+Sans+Condensed:300" rel="stylesheet">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+                <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+                <!-- File's own css/javascript -->
+        <link href="/static/css/layout.css" rel="stylesheet"/>
+        <script src="/static/js/scripts.js"></script>
+
+        {% block style %}{% endblock %}
+
+        <title>Bookshelf: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="/"><p class="headtext">Bookshelf</p></a>
+            {% if session.user_id %}
+                    <ul class="navbar-nav mr-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/"><p class="font-weight-light"><strong>Home</strong></p></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/books"><p class="font-weight-light"><strong>Books</strong></p></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/buy"><p class="font-weight-light"><strong>Buy A Book</strong></p></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/sell"><p class="font-weight-light"><strong>Sell A Book</strong></p></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/send"><p class="font-weight-light"><strong>Send</strong></p></a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/account"><p class="font-weight-light"><strong>Account</strong></p></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/terms"><p class="font-weight-light"><strong>Terms and Conditions</strong></p></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/logout"><p class="font-weight-light"><strong>Log Out</strong></p></a></li>
+                    </ul>
+                {% else %}
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/terms"><p class="font-weight-light"><strong>Terms and Conditions</strong></p></a></li>
+                    </ul>
+                {% endif %}
+        </nav>
+
+        {% if get_flashed_messages() %}
+            <header>
+                <div class="alert alert-primary border text-center" role="alert">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+        <div class="container-fluid">
+            {% block body %}{% endblock %}
+        </div>
+
+        <div class="footer fixed-bottom">
+            <hr>
+            <p class="footer-style text-muted">
+                Bookshelf is a final project for <a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">CS50x</a>.
+                It is designed on <a href="https://getbootstrap.com/">Bootstrap 4</a>, some pages redirect to <a href="https://www.goodreads.com/">Goodreads</a>.
+            </p>
+        </div>
+
+    </body>

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block style %}
+    <link href="/static/css/register.css" rel="stylesheet"/>
+    <script src="/static/js/register.js"></script>
+{% endblock %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block body %}
+    <form class="needs-validation" action="/register" method="post" novalidate>
+    	<div class="form-check">
+    		<div class="form-row">
+    			<div class="form-group col-md-6">
+    				<input autocomplete="off" autofocus class="form-control" id="firstName" name="firstName" placeholder="Your First Name" type="text" pattern="[A-Za-z]{3,20}" required/>
+        		</div>
+        		<div class="form-group col-md-6">
+            		<input type="text" autocomplete="off" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name" pattern="[A-Za-z]{3,20}" required>
+            	</div>
+        	</div>
+     		<div class="form-group">
+            	<input class="form-control" id="email" name="email" placeholder="Your E-mail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" id="username" name="username" placeholder="Your Username" type="text" pattern="[A-Za-z]{4,20}" required/>
+            </div>
+            <div class="form-group">
+            	<input class= "form-control" autocomplete="off" id="password" name="password" placeholder="Your Password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" autocomplete="off" id="confirmation" name="confirmation" placeholder="Re-type Your Password" type="password" required/>
+            </div>
+            <div class="form-row">
+	            <div class="form-group col-md-4">
+	                <input autocomplete="off" autofocus class="form-control" id="day" name="day" placeholder="Day" type="numbers" pattern="[0-9].{1,2}" required/>
+	            </div>
+	            <!-- Done in the scripts.js file -->
+                <div class="form-group col-md-4" id="monthDiv"></div>
+                <div class="form-group col-md-4" id="yearDiv"></div>
+            </div>
+        </div>
+            <div class="form-row">
+            	<div class="col-md-4">
+            		<input type="checkbox" id="showPassword"> Show Password
+            	</div>
+            	<div class="col-md-6">
+            		<button class="btn btn-primary btn-block reg-button" type="submit">Register</button>
+        		</div>
+    		</div>
+    	</form>
+{% endblock %}

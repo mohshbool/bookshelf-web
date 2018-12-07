@@ -1,0 +1,21 @@
+form
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 6%;
+}
+.btn.btn-primary
+{
+    position: absolute;
+    right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.advice
+{
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Lato', cursive, 'Times New Roman';
+    font-style: italic;
+    font-size: 104%;
+}

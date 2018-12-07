@@ -1,0 +1,33 @@
+.custom-center
+{
+	margin-top: 10%;
+	margin-left: 33%;
+	margin-right: 33%;
+	width: 35%;
+}
+.acc
+{
+	margin-right: 230px;
+	margin-left: 20px;
+}
+i
+{
+	margin-right: 110px;
+}
+span
+{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.btn-outline-secondary
+{
+	margin-bottom: 15px;
+}
+#first
+{
+	padding-top: 20px;
+}
+.alert-success
+{
+	margin-top: 15px;
+}

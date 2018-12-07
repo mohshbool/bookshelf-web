@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block style %}
+	<link href="/static/css/sell.css" rel="stylesheet"/>
+	<script src="/static/js/sell.js"></script>
+{% endblock %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block body %}
+    <p class="advice">For the best reults, we recomment getting images from Amazon.</p>
+    <form class="needs-validation" action="/sell" method="post" enctype=multipart/form-data novalidate>
+        <div class="form-check">
+            <div class="form-row">
+                <div class="col">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="bookName" id="bookName" placeholder="Book Name" autofocus required>          
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="authorName" id="authorName" placeholder="Author Name" autofocus required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="descreption" id="descreption" rows="6"
+                placeholder="Write about your book's condition, release date, author, edition, ..." ></textarea>
+            </div>
+            <label class="btn btn-secondary">
+                Upload a photo of the book <input type="file" style="display: none;" id="upload" name="upload">
+            </label>
+            <button type="submit" class="btn btn-primary" id="sell">Sell</button>
+        </div>
+    </form>
+{% endblock %}

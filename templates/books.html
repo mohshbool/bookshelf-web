@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block style %}
+	<link href="/static/css/books.css" rel="stylesheet"/>
+	<script src="/static/js/books.js"></script>
+{% endblock %}
+
+{% block title %}
+    Books
+{% endblock %}
+
+{% block body %}
+    <form>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-group">
+                    <input autofocus id="q" name="q" type="text" class="form-control" placeholder="Search by author, name or ISBN" required/>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary" type="button" id="search">Search</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

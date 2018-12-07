@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block style %}
+	<link href="/static/css/send.css" rel="stylesheet"/>
+	<script src="/static/js/send.js"></script>
+{% endblock %}
+
+{% block title %}
+    Send
+{% endblock %}
+
+{% block body %}
+    <form>
+        <div>
+            <div class="form-group">
+                <input class="form-control" type="text" id="sendto" placeholder="Enter the username of the reciver (case-sensitive)" 
+                autofocus autocomplete required/>
+            </div>
+            <div class="form-group">
+                <textarea id="message" type="text" class="form-control" placeholder="Enter your message here" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="button" id="send">Send</button>
+        </div>
+    </form>
+{% endblock %}

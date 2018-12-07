@@ -1,0 +1,34 @@
+form
+{
+  position: center;
+  text-align: center;
+  margin-top : 10%;
+  margin-right: 33%;
+  margin-left: 33%;
+  padding: 16px;
+}
+/*
+  background-color: white;
+  border: 5px solid #663f05;
+body
+{
+	background-image: url("../media/register-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: relative;
+}*/
+.form-control
+{
+	text-align: center;
+	font-style: italic;
+}
+.reg-button
+{
+	margin-top: 5%;
+	margin-left: 35%;
+}
+#showPassword
+{
+	margin-top: 15%;
+	margin-left: 2%;
+}

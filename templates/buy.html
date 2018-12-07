@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block style %}
+	<link href="/static/css/buy.css" rel="stylesheet"/>
+	<script src="/static/js/buy.js"></script>
+{% endblock %}
+
+{% block title %}
+    Buy A book
+{% endblock %}
+
+{% block body %}
+    <form class="form-buy">
+		<div class="row">
+			<div class="col-md-10">
+				<div class="form-group">
+					<input autofocus id="q" name="q" type="text" class="form-control" placeholder="Search by book name" required/>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-primary" type="button" id="search">Search</button>
+			</div>
+		</div>
+    </form>
+{% endblock %}

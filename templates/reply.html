@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block style %}
+	<link href="/static/css/reply.css" rel="stylesheet"/>
+	<script src="/static/js/reply.js"></script>
+{% endblock %}
+
+{% block title %}
+    Reply
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <textarea id="message" type="text" class="form-control" placeholder="Enter your message here" rows="5" autofocus required></textarea>
+            </div>
+            <button class="btn btn-primary" type="button" id="reply">Reply</button>
+        </form>
+    </div>
+{% endblock %}
