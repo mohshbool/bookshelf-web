@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	// Manipulate the DOM to add month of the yeard ynamically as a select
+	// Manipulate the DOM to add month of the year dynamically as a select
 	let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	$("#monthDiv").append("<select name=\"month\" class=\"form-control\" pattern=\"^Month\" id=\"monthP\" required>");
 	$("[name=month]").append("<option selected value=\"\" disabled=\"disabled\">Month</option>");
