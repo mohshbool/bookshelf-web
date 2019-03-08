@@ -33,10 +33,11 @@ db = connect("website.db", check_same_thread=False)
 
 # Configure the mailing server
 myEmail = "<email>"
+myPassword = "<password>"
 emailServer = SMTP("smtp.gmail.com:587")
 emailServer.ehlo()
 emailServer.starttls()
-emailServer.login(myEmail, "<password>")
+emailServer.login(myEmail, myPassword)
 
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
