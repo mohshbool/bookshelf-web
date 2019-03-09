@@ -10,7 +10,7 @@
 * [Bootstrap](https://getbootstrap.com/)
 * [Goodreads](https://www.goodreads.com/)
 
-## Dependancies 
+## Dependencies 
 - **flask**
 - **flask-session**
 
@@ -24,7 +24,7 @@ $ git clone https://github.com/Minter27/Bookshelf.git
 $ cd Bookshelf
 ```
 
-### Installing dependacies
+### Installing dependencies
 
 *Please use `pip`*
 ###### Windows
