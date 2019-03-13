@@ -58,3 +58,6 @@ $ export FLASK_APP=application.py
 ```
 $ flask run
 ```
+
+## IMPORTANT
+In order for your newly created account to be able to send emails on your behalf (and allow this application to run), you will likely need to allow 'Less secure app access' on your new gmail account as described [here](https://support.google.com/accounts/answer/6010255?hl=en).
